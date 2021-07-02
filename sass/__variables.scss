@@ -1,0 +1,33 @@
+
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+$variable_sass: yellow;
+
+$text_center: center;
+
+$bold: 900;
+
+
+
+h1{
+    color: $variable_sass;
+    text-align: $text_center;
+}
+
+
+.titulo_principal{
+    font-size: 24px;
+    font-weight: bold;
+    .grande{
+        color: red;
+    }
+}
+
+.boton_celeste{
+
+}

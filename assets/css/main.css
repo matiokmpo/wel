@@ -1,8 +1,22 @@
-body {
-  background-color: red;
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black: #000000;
 }
 
-body h1 {
-  color: blue;
+h1 {
+  color: yellow;
+  text-align: center;
 }
-/*# sourceMappingURL=main.css.map */
+
+.titulo_principal {
+  font-size: 24px;
+  font-weight: bold;
+}
+.titulo_principal .grande {
+  color: red;
+}
+
+body {
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
