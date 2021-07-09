@@ -17,17 +17,49 @@ $bold: 900;
 h1{
     color: $variable_sass;
     text-align: $text_center;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 .titulo_principal{
-    font-size: 24px;
-    font-weight: bold;
-    .grande{
-        color: red;
-    }
+    font-size: 56px;
+    font-weight: 700;
+    color:#000000;
+    font-family: 'Roboto', sans-serif;
+    line-height: 50px;
+    padding-bottom: 25px;
+
+}
+.titulo_mediano h3{
+    font-size: 46px;
+    font-weight: 700;
+    color:#000000;
+    font-family: 'Roboto', sans-serif;
+    line-height: 50px;
+    padding-bottom: 25px;
+}
+
+.titulo_pequeño {
+    font-size: 36px;
+    font-weight: 700;
+    color:#000000;
+    font-family: 'Roboto', sans-serif;
+    line-height: 50px;
+    padding-bottom: 25px;
 }
 
 .boton_celeste{
-
+    justify-items: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color:#ffffff;
+    background-color: #02A4FF;
+    padding: 15px 20px;
+    border-radius: 4px;
+    nav-btn{
+        padding: 5px 5px;
+        height: 30px;
+    }
 }

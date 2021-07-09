@@ -1,6 +1,119 @@
 @import '__variables.scss';
 
-body {
- background-color: red;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+ background-color:#ffffff;
+
+}
+
+
+/*NAVEGACIÓN*/
+ .nav-menu li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    margin: 0 auto;
+}
+
+ .nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+}
+
+.nav-logo{
+    width: 50px;
+}
+
+.nav-main ul{
+    display: flex; 
+}
+
+.nav-main ul li{
+    padding: 10px;
+    list-style:none;
+}
+
+.nav-menu{
+    margin:0;
+}
+
+.banner-principal{
+    display: flex;
+    height: 674px;
+}
+
+.text-banner{
+    padding-top: 105px;
+    padding-left: 141px;
+    border: solid 2px red;
+}
+
+.img-banner{
+    height: 674px;
+}
+
+p{
+     font-family: 'Roboto', sans-serif;
+}
+
+.text-banner p{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.section-two{
+    padding: 0 50px 0 100px;
+}
+
+.section_tecnologia{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.titulo_mediano{
+    padding-left: 150px;
+    width: 50%;
+    padding-right: 100px;
+}
+
+.icon_container{
+    display: inline-block ;
+    padding-right: 100px;
+}
+
+.img-tec{
+    height: 64px;
+    width: 64px;
+}
+.tec_icons{
+    display: flex;
+    margin-bottom:10px ;
+}
+
+.tec_icons div h2{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tec_icons div {
+  padding-left: 10px;
+}
+.section_logo_empre{
+    padding: 0 100px;
+}
+.logo_empresas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo_pequeño h4{
+    padding: 0 120px;
 }
