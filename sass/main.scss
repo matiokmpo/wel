@@ -7,10 +7,19 @@
 }
 
 body {
- background-color:#ffffff;
-
+    background-color:#ffffff;
+    font-size: 14;
+}
+p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
+
+.container{
+    width: 90%;
+    max-width: 1500px;
+}
 
 /*NAVEGACIÓN*/
  .nav-menu li a{
@@ -59,38 +68,44 @@ body {
     height: 674px;
 }
 
-p{
-     font-family: 'Roboto', sans-serif;
-}
-
 .text-banner p{
     padding-bottom: 20px;
     font-size: 16px;
 }
+
+/*SECCIÓN 2*/
 .section-two{
-    padding: 0 50px 0 100px;
+    padding: 0px 0 50px 0;
+    font-size: 16px;
 }
+
 
 .section_tecnologia{
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 60px 100px 0 100px;
+    justify-items: center;
+    font-size: 1em;
 }
 
-.titulo_mediano{
-    padding-left: 150px;
-    width: 50%;
-    padding-right: 100px;
+.text-tec-izq{
+    padding: 0 50px;
+    font-size: 16px;
+}
+
+.text-tec-izq p{
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .icon_container{
     display: inline-block ;
-    padding-right: 100px;
+    /*padding-right: 100px;*/
 }
 
 .img-tec{
-    height: 64px;
-    width: 64px;
+    height: 60px;
+    width: 60px;
 }
 .tec_icons{
     display: flex;
@@ -98,7 +113,7 @@ p{
 }
 
 .tec_icons div h2{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
@@ -106,14 +121,545 @@ p{
 .tec_icons div {
   padding-left: 10px;
 }
+
+.icon_container .tec_icons p{
+    font-size: 1em;
+}
+
 .section_logo_empre{
     padding: 0 100px;
 }
 .logo_empresas{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr)); 
+    gap: 20px;
+    justify-items: center;
 }
 
-.titulo_pequeño h4{
-    padding: 0 120px;
+.img-logo{
+    width: 160px;
+    height: 160px;
+}
+
+
+/*SECCION 3*/
+.section-three{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 50px 100px 50px 100px;
+    width: 100%;
+    font-size: 14px;
+}
+.section-three-img{
+    width: 90%;
+    height: 550px;
+}
+
+.img-colaboradores{
+    max-width: 100%;
+    min-width: 400px;
+    height: 550px;
+}
+
+.text-colaboradores{
+    padding-right: 60px;
+}
+.colaboradores-items div{
+    display: flex;
+}
+
+.colaboradores-items div p{
+    padding-left: 6px;
+}
+.button-container{
+    margin-top: 5px;
+}
+
+/*SECCIÓN 4*/
+.section-four{
+    padding: 60px 260px 50px 260px;
+}
+
+.title-modulos{
+    text-align: center;
+}
+
+.title-modulos p{
+    font-size: 16px;
+}
+.modulo-fila1{
+    display: grid;
+    grid-template-columns:(repeat(2,1fr));
+    gap: 20px;
+}
+.modulo{
+    position: relative;
+    padding-left: 40px;
+}
+.modulo p{
+   line-height: 25px; 
+}
+
+.mod-icons{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 0;
+}
+.button-container1{
+    padding-top: 30px;
+    justify-content: center;
+}
+
+
+/*SECCION 5*/
+.section-five{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 50px 100px 50px 100px;
+    width: 100%;
+    font-size: 14px;
+}
+.section-five-img{
+    width: 90%;
+    height: 550px;
+}
+
+.img-desempeño{
+    max-width: 100%;
+    min-width: 400px;
+    height: 550px;
+}
+
+.text-desempeño{
+    padding-left: 60px;
+}
+.desempeño-items div{
+    display: flex;
+}
+
+.desempeño-items div p{
+    padding-left: 6px;
+}
+.button-container{
+    margin-top: 5px;
+}
+
+/*SECCIÓN 6*/
+.section-six{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 50px 100px 50px 100px;
+    width: 100%;
+    font-size: 14px;
+}
+.section-six-img{
+    width: 90%;
+    height: 550px;
+}
+
+.img-kpi{
+    max-width: 100%;
+    min-width: 400px;
+    height: 550px;
+}
+
+.text-kpi{
+    padding-right: 60px;
+}
+.kpi-items div{
+    display: flex;
+}
+
+.kpi-items div p{
+    padding-left: 6px;
+}
+.button-container{
+    margin-top: 5px;
+}
+
+/*SECCION 7*/
+.section-seven{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 50px 100px 50px 100px;
+    width: 100%;
+    font-size: 14px;
+}
+.section-seven-img{
+    width: 90%;
+    height: 450px;
+    padding-top: 60px;
+}
+
+.img-escala{
+    max-width: 100%;
+    min-width: 400px;
+    height: 450px;
+}
+
+.text-escala{
+    padding-left: 60px;
+}
+.escala-items div{
+    display: flex;
+}
+
+.escala-items div p{
+    padding-left: 6px;
+}
+.button-container{
+    margin-top: 5px;
+}
+
+
+/*Tamaño extra largo */
+@media(max-width: 1200px){
+    /*SECCION 2*/
+    .section_tecnologia{
+        padding: 60px 50px 0 50px;
+    }
+    .logo_empresas{
+    grid-template-columns: repeat(3,1fr); 
+    gap: 30px;
+    }
+    .section_logo_empre{
+        padding: 0 50px;
+        text-align: center;
+    }
+    .img-logo{
+        width: 140px;
+        height: 140px;
+    }
+
+    /*SECCION 3*/
+    .section-three{
+        padding: 50px;
+    }
+
+
+    /*SECCIÓN 4*/
+    .section-four{
+        padding: 60px 180px 50px 180px;
+    }
+
+
+    /*SECCION 5*/
+    .section-five{
+         padding: 50px;
+    }
+
+    /*SECCION 6*/
+    .section-five{
+        padding: 50px;
+    }
+
+    /*SECCION 7*/
+    .section-seven{
+        padding: 50px;
+    }
+
+
+}
+
+/*Tamaño largo */
+@media(max-width: 992px){
+    /*SECCION 2*/
+    .text-tec-izq p{
+        font-size: 14px;
+    }
+    .tec_icons{
+        font-size: 14px;
+    }
+    .section_tecnologia{
+        padding: 0;
+    }
+
+    /*SECCION 3*/
+    .section-three{
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .text-colaboradores{
+        padding-right: 20px;
+    }
+    .img-colaboradores{
+        min-width: 350px;
+    }
+    
+
+    /*SECCIÓN 4*/
+    .section-four{
+        padding: 60px 120px 50px 120px;
+    }
+
+    /*SECCION 5*/
+    .section-five{
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .text-desempeño{
+        padding-left: 20px;
+    }
+    .img-desempeño{
+        min-width: 350px;
+    }
+
+    /*SECCION 6*/
+    .section-six{
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .text-kpi{
+        padding-right: 20px;
+    }
+    .img-kpi{
+        min-width: 350px;
+    }
+
+    /*SECCION 7*/
+    .section-seven{
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .text-escala{
+        padding-left: 20px;
+    }
+    .img-escala{
+        min-width: 350px;
+    }
+
+    
+}
+
+/*Tamaño medio */
+@media(max-width: 768px){
+    /*SECCION 2*/
+    .text-tec-izq{
+        padding: 0 10px 0 10px;
+        font-size: 12px;
+    }
+    .icon_container{
+        font-size: 12px;
+    }
+    .titulo_mediano{
+        line-height: 40px;
+    }
+    .section_logo_empre{
+        font-size: 12px;
+    }
+    .logo_empresas{
+        grid-template-columns: repeat(2,1fr); 
+        gap: 30px;
+    }
+    .titulo_pequeño{
+        line-height: 35px;
+    }
+
+
+    /*SECCION 3*/
+    .section-three{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .section-three-img{
+        width: 100%;
+        text-align: center;
+    }
+    .text-colaboradores{
+        font-size: 12px;
+        padding: 20px 20px 30px 20px;
+    }
+    .button-container{
+        justify-content: center;
+    }
+    .boton_celeste{
+        font-size: 12px;
+    }
+    
+
+      /*SECCIÓN 4*/
+    .section-four{
+        padding: 60px 50px 50px 50px;
+    }
+    .modulo-fila1{
+        gap: 15px;
+    }
+    .title-modulos{
+        font-size: 14px;
+    }
+
+
+    /*SECCION 5*/
+    .section-five{
+        display: inline-block;      
+    }
+    .section-five-img{
+        width: 100%;
+        text-align: center;
+    }
+    .text-desempeño{
+        font-size: 12px;
+        padding: 20px 20px 30px 20px;
+    }
+    .button-container{
+        justify-content: center;
+    }
+    .boton_celeste{
+        font-size: 12px;
+    }
+
+
+    /*SECCION 6*/
+    .section-six{
+        display: flex;
+        flex-direction: column-reverse;     
+    }
+    .section-six-img{
+        width: 100%;
+        text-align: center;
+    }
+    .text-kpi{
+        font-size: 12px;
+        padding: 20px 20px 30px 20px;
+    }
+    .button-container{
+        justify-content: center;
+    }
+    .boton_celeste{
+        font-size: 12px;
+    }
+
+    /*SECCION 7*/
+    .section-seven{
+        display: inline-block;      
+    }
+    .section-seven-img{
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+    .text-escala{
+        font-size: 12px;
+        padding: 20px 20px 30px 20px;
+    }
+    .button-container{
+        justify-content: center;
+    }
+    .boton_celeste{
+        font-size: 12px;
+    }
+
+}
+
+/*Tamaño mobile */
+@media(max-width: 576px){
+    .container{
+        width: 95%;
+    }
+
+    /*SECCION 2*/
+    .section_tecnologia{
+        display: block;
+    }
+    .tec_icons{
+        padding-bottom: 10px;
+    }
+    .section_logo_empre{
+    padding: 0;
+    }
+    .logo_empresas{
+        gap: 15px;
+    }
+    .logo_empresas{
+        grid-template-columns: repeat(2,minmax(auto,1fr)); 
+    }
+    .img-logo{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*SECCIÓN 3*/
+    .section-three-img{
+        height: 100%;
+        min-width: 100%;
+    }
+    .img-colaboradores{
+        width: auto;
+        height: auto;
+        min-width: 200px;
+    }
+    .text-colaboradores{
+        padding: 0;
+    }
+
+
+    /*SECCIÓN 4*/
+    .section-four{
+        padding: 60px 10px 50px 10px;
+        font-size: 14px;
+    }
+    .modulo-fila1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+    }
+    .modulo{
+        padding-bottom: 15px;
+    }
+    .title-modulos{
+        font-size: 14px;
+    }
+
+    /*SECCIÓN 5*/
+    .section-five-img{
+        height: 100%;
+        min-width: 100%;
+    }
+    .img-escala{
+        width: auto;
+        height: auto;
+        min-width: 200px;
+    }
+    .text-escala{
+        padding: 0;
+    }
+
+    
+    /*SECCIÓN 6*/
+    .section-six-img{
+        height: 100%;
+        min-width: 100%;
+    }
+    .img-kpi{
+        width: auto;
+        height: auto;
+        min-width: 200px;
+    }
+    .text-kpi{
+        padding: 0;
+    }
+
+    /*SECCIÓN 7*/
+    .section-seven-img{
+        height: 100%;
+        min-width: 100%;
+    }
+    .img-escala{
+        width: auto;
+        height: auto;
+        min-width: 200px;
+    }
+    .text-escala{
+        padding: 0;
+    }
+
+    
 }
