@@ -63,12 +63,20 @@ h1 {
 .boton_blanco {
   justify-items: center;
   cursor: pointer;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   color: #02A4FF;
   background-color: #ffffff;
-  padding: 15px 20px;
+  padding: 4px 4px;
   border-radius: 4px;
   text-decoration: none;
   height: 50px;
@@ -192,6 +200,33 @@ p {
   height: 60px;
 }
 
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menus {
+  margin-left: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.btn_menu {
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.show {
+  top: 65px;
+  border: solid 4px red;
+}
+
 .img-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,32 +237,9 @@ p {
   width: auto;
 }
 
-.menus {
-  margin-left: 10px;
-  list-style: none;
-  text-decoration: none;
-}
-
-.nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .menu-container div {
   font-size: 12px;
   font-weight: 500;
-}
-
-.btn_menu {
-  display: none;
-}
-
-.nav-menu .menus .show {
-  top: 65px;
 }
 
 /*BANNER PRINCIPAL*/
@@ -629,6 +641,10 @@ p {
   display: flex;
 }
 
+.planes-mod {
+  margin-bottom: 60px;
+}
+
 .planes-mod p {
   text-align: start;
   padding-left: 6px;
@@ -712,6 +728,16 @@ p {
   font-size: 14px;
   border-radius: 6px;
   max-width: 350px;
+}
+
+.box-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bold-seccion {
+  background-color: blanchedalmond;
 }
 
 /*SECCIÓN 10*/
@@ -1201,9 +1227,14 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 10px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .redes1 {
     margin-bottom: 8px;
+    margin-left: 0;
   }
   .redes-logos {
     -webkit-box-align: center;
@@ -1228,6 +1259,9 @@ p {
     display: inline-block;
     text-align: center;
   }
+  .menus {
+    margin-left: 0;
+  }
 }
 
 /*Tamaño mobile */
@@ -1241,12 +1275,14 @@ p {
   }
   /*.btn_menu{
         display: inline-flex;
+        border: solid 2px red;
     }
 
     .nav-menu{
+        border: solid 6px red;
         position: fixed;
         width: 100vw;
-        height: calc(100% -65px);
+        height: calc(100% -60px);
         background: #414141;
         top: -100vh;
         text-align: center;

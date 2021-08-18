@@ -35,10 +35,10 @@ p{
     align-items: center;
     height: 60px;
 }
-.img-logo{
+
+.nav-menu{
     display: flex;
     align-items: center;
-    width: auto;
 }
 
 .menus{
@@ -46,21 +46,32 @@ p{
     list-style: none;
     text-decoration: none; 
 }
-.nav-menu{
+
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.show{
+    top:65px;
+    border: solid 4px red;
+}
+
+.img-logo{
     display: flex;
     align-items: center;
+    width: auto;
 }
+
+
 .menu-container div{
     font-size: 12px;
     font-weight: 500;
 }
 
-.btn_menu{
-    display: none;
-}
-.nav-menu .menus .show{
-    top:65px;
-}
+
 
 
 /*BANNER PRINCIPAL*/
@@ -402,6 +413,10 @@ p{
     display: flex;
 }
 
+.planes-mod{
+    margin-bottom: 60px;
+}
+
 .planes-mod p{
     text-align: start;
     padding-left: 6px;
@@ -477,6 +492,17 @@ p{
     font-size: 14px;  
     border-radius: 6px;
     max-width: 350px;
+   // position: absolute;
+}
+
+.box-button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bold-seccion{
+    background-color: blanchedalmond;
 }
 
 /*SECCIÓN 10*/
@@ -489,11 +515,10 @@ p{
     width: 450px;
     height: 450px;
 }
-.contac-container{
-    //margin-top: -150px;
-}
 
-/*FOOTER*/
+
+
+/*FOOTER*/ 
 .wel-footer{
     display: flex;
     height: 120px;
@@ -953,10 +978,13 @@ p{
        flex-direction: column-reverse; 
     }
     .redes{
-        flex-direction: column; 
+        flex-direction: column;
+        margin:10px 0;
+        align-items: center;
     }
     .redes1{
         margin-bottom: 8px;
+        margin-left: 0;
     }
     .redes-logos{
         align-items: center;
@@ -977,6 +1005,9 @@ p{
         display: inline-block;
         text-align: center;
     }
+    .menus{
+        margin-left: 0;
+    }
 }
 
 /*Tamaño mobile */
@@ -992,12 +1023,14 @@ p{
 
     /*.btn_menu{
         display: inline-flex;
+        border: solid 2px red;
     }
 
     .nav-menu{
+        border: solid 6px red;
         position: fixed;
         width: 100vw;
-        height: calc(100% -65px);
+        height: calc(100% -60px);
         background: #414141;
         top: -100vh;
         text-align: center;
